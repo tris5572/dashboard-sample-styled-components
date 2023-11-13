@@ -10,7 +10,7 @@ export const THEME = {
       light: "#bbf2f2",
     },
     background: {
-      light: "#e6f7f7",
+      light: "#ebf5f5",
       dark: "#547d7d",
     },
   },

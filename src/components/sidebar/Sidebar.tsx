@@ -9,7 +9,6 @@ const items: ItemProps[] = [
 ];
 
 const Wrapper = styled.div`
-  width: 200px;
   min-height: 100dvh;
   background: white;
 `;
