@@ -1,4 +1,4 @@
-import { cloneElement } from "react";
+import { CSSProperties, cloneElement } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -34,11 +34,11 @@ const Ratio = styled.div`
 `;
 
 export type Props = {
+  className?: string;
+  style?: CSSProperties;
   icon?: JSX.Element;
   title: string;
   value: number | string;
-  /** 表示幅。ただし並べたものの合計幅がオーバーするときは勝手に縮まるので、目安程度 */
-  width?: string;
   /** 増減の矢印 */
   arrow?: "+" | "-";
   /** 増減の文字列 */
@@ -52,7 +52,7 @@ export function Stat(props: Props) {
     props.icon && cloneElement(props.icon, { size: "2em", margin: "auto" });
 
   return (
-    <Wrapper style={{ width: props.width }}>
+    <Wrapper className={props.className} style={props.style}>
       {icon && <Icon>{icon}</Icon>}
       <div>
         <Title>{props.title}</Title>

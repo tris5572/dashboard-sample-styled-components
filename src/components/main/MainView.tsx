@@ -23,7 +23,7 @@ export function MainView() {
           icon={<HiOutlineDocumentReport />}
           title={"本日の販売数"}
           value={"199,999 冊"}
-          width="20%"
+          style={{ width: "20%" }}
           arrow="+"
           ratio="12.3%"
           ratioAppend="（前日比）"
@@ -32,7 +32,7 @@ export function MainView() {
           icon={<HiOutlineBookOpen />}
           title={"紙（本日・内訳）"}
           value={"99,999 冊"}
-          width="20%"
+          style={{ width: "20%" }}
           arrow="-"
           ratio="12.3%"
           ratioAppend="（前日比）"
@@ -41,9 +41,9 @@ export function MainView() {
           icon={<HiOutlineGlobeAlt />}
           title={"電子書籍（本日・内訳）"}
           value={"100,000 冊"}
-          width="20%"
+          style={{ width: "20%" }}
         />
-        <Stat title={"天気"} value={"晴れ"} width="20%" />
+        <Stat title={"天気"} value={"晴れ"} style={{ width: "20%" }} />
       </Wrapper>
       <Wrapper>
         <Table
