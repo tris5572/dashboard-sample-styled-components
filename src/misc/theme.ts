@@ -3,6 +3,7 @@ export const THEME = {
     text: {
       main: "#333",
       light: "#999",
+      xlight: "#ccc",
     },
     primary: {
       main: "#77dddd",
